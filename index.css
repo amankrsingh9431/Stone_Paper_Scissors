@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background:rgb(29, 29, 29);
+}
+h1{
+    text-align: center;
+    color: #B9F18C;
+    font-size: 55px;
+}
+#container{
+    /* border: 1px solid red; */
+   margin-top: 65px;
+   display: flex;
+}
+#paper{
+    height:255px;
+    position: relative;
+    left:0px;
+        transform: scale(0);
+     animation: animo 5s forwards;
+}
+@keyframes animo {
+    100%{
+        left: 200px;
+        transform: scale(1);
+
+    }
+}
+ .eb{
+    color: aquamarine;
+    /* border: 1px solid red; */
+font-size: 25px;
+display: flex;
+margin: 0 auto;
+width: 10%;
+text-align: center;
+justify-content: space-between;
+}
+.time{
+    color: #B9F18C;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+.time p{
+    border: 1px solid red;
+    padding: 2px;
+    width:9%;
+    text-align: center;
+}
+.box1{
+    border-right: 2px solid red;
+    width: 80px;
+}
+#Computer{
+    height:255px;
+    /* border: 1px solid seagreen; */
+    position: absolute;
+    right:0;
+    transform: scale(0);
+     animation: companimo 3s forwards;
+}
+@keyframes companimo {
+    100%{
+        right: 300px;
+        transform:scaleX(-1);
+    }
+}
+#box{
+    color: #B9F18C;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    font-size: 45px;
+    font-family:cursive;
+    margin: 55px;
+ 
+}
+.pap{
+    border: 2px solid aqua;
+    padding:10px;
+    border-radius: 12px;
+    box-shadow: 2px 2px aquamarine,
+    -2px -2px aquamarine;
+    cursor: pointer;
+    
+}
+#changer{
+    color: #B9F18C;
+    /* border: 1px solid red; */
+ display: none;
+ position: absolute;
+ top:-5%;
+ width: 99%;
+ text-align: center;
+ font-size: 25px;
+ animation: animchng 1s forwards;
+}
+@keyframes animchng {
+    100%{
+        top: 25%;
+    }
+}
+#reset{
+    color: #B9F18C;
+   border: 1px solid red;
+   text-align: center;
+   width:10%;
+   font-size: 25px;
+   margin: 0 auto;
+   position: relative;
+   top: -60%;
+   animation:  set 1s forwards;
+   cursor: pointer;
+   display: none;
+}
+@keyframes set {
+    100%{
+        top: -20%;
+    }
+}
